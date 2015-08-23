@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/fragment_home_dashboard_title"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_width"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragment_home_dashboard_iv"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Today"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/fragment_home_dashboard_ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/overview_fragment_dialog_iB1"
+            android:src="@mipmap/btn_back"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/overview_fragment_dialog_iB2"
+            android:src="@mipmap/btn_more"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>

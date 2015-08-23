@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" > >
+
+    <LinearLayout
+        android:id="@+id/fragment_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/activity_main_linear_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar_shape"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bar_height"
+                android:id="@+id/activity_main_imageButton1"
+                android:src="@mipmap/settingbar"
+                android:layout_gravity="left|top"
+                android:background="@drawable/btn_image_shape" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bar_height"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:id="@+id/activity_main_title"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/bar_height"
+                android:id="@+id/activity_main_imageButton2"
+                android:src="@mipmap/search"
+                android:layout_gravity="left|top"
+                android:background="@drawable/btn_image_shape" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_main_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FF444444"
+        android:choiceMode="singleChoice"/>
+
+    <LinearLayout
+        android:id="@+id/activity_main_drawer2"
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#FF444444">
+        <LinearLayout
+            android:id="@+id/activity_main_drawer2_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/activity_main_drawer2_ed1"
+                android:layout_width="match_parent"
+                android:hint="Search..."
+                android:textColorHint="@color/light_gray"
+                android:layout_height="@dimen/search_height"
+                android:layout_weight="1"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/activity_main_drawer2_search"
+                android:background="@drawable/custom_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/search_height"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

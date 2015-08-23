@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map_relative_layout">
+
+    <RelativeLayout
+        android:id="@+id/fragment_map_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ImageView
+            android:id="@+id/fragment_map_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/home_map_first"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Last updated: 2015/8/15 14:02"
+            android:id="@+id/fragment_map_tvTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Next updated: 2015/8/15 14:10"
+            android:id="@+id/fragment_map_tvTitle2"
+            android:layout_below="@+id/fragment_map_tvTitle"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_shape"
+        android:id="@+id/fragment_map_bottom_bar"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_height"
+            android:id="@+id/fragment_map_firstFloor"
+            android:src="@mipmap/btn_first_floor"
+            android:layout_gravity="left|top"
+            android:background="@drawable/btn_image_shape"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_height"
+            android:id="@+id/fragment_map_secondFloor"
+            android:src="@mipmap/btn_second_floor"
+            android:layout_gravity="left|top"
+            android:background="@drawable/btn_image_shape"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_height"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1F First Floor"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:id="@+id/fragment_map_tv"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_height"
+            android:id="@+id/fragment_map_imageButton1"
+            android:background="@drawable/btn_reset"
+            android:layout_gravity="left|top"/>
+    </LinearLayout>
+
+</RelativeLayout>

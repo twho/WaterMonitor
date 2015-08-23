@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WaterMonitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- client fragment -->
+    <string name="client_fragment_title">Family member Login/Register</string>
+    <string name="client_fragment_name">Name:  </string>
+    <string name="client_fragment_student_id">Student ID: </string>
+    <string name="client_fragment_email">Email: </string>
+
+    <!-- setting fragment -->
+    <string name="settings_fragment_title">Personal settings</string>
+    <string name="settings_fragment_sethead">click to set portrait</string>
+    <string name="settings_fragment_name">Name: </string>
+    <string name="settings_fragment_email">E-mail: </string>
+    <string name="settings_fragment_id">Student ID: </string>
+    <string name="settings_fragment_portrait">Select your portrait </string>
+    <string name="settings_fragment_dialog_btn">OK </string>
+
+</resources>
